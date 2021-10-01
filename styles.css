@@ -161,7 +161,7 @@ body {
 /* Trick or Treat */
 
 section#trick-or-treat {
-  background: orange;
+  background: rgb(236, 119, 10);
   display: flex;
   flex-wrap: wrap;
   min-height: 600px;
@@ -309,6 +309,10 @@ section#trick-or-treat div .treat {
   background-image: url(Images/treat.png);
 }
 
+section#trick-or-treat div .dftreat {
+  background-image: url(Images/dftreat.png);
+}
+
 /* End of Trick or Treat */
 
 /*Contact Page CSS*/
@@ -404,4 +408,8 @@ section#trick-or-treat div .treat {
 .footer-heart::after {
   top: 0;
   right: -0.6rem;
+}
+
+#spookyjokes {
+  color: white;
 }
