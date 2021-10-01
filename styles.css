@@ -596,3 +596,7 @@ footer {
   text-decoration: none;
   cursor: pointer;
 }
+
+.soc {
+  background-color: rgb(236, 119, 10);
+}
