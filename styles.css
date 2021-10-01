@@ -313,6 +313,10 @@ section#trick-or-treat div .treat{
     background-image: url(Images/treat.png);
 }
 
+section#trick-or-treat div .dftreat{
+  background-image: url(Images/dftreat.png);
+}
+
 /* End of Trick or Treat */
 
 /*Contact Page CSS*/
