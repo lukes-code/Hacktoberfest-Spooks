@@ -19,3 +19,50 @@ document.addEventListener('click', function (e) {
     };
 
 }, false);
+
+//Secret code messages
+$(document).ready(function(){
+    //set secret words
+    var secrets = {
+        'SPOOKY':'mNFx28NGLfI',
+        'BEANS':'cf65-4A4xRQ',
+        'HACKTOBER':'JZeHxbLm_IQ',
+        'POTION':'R_FQU4KzN7A',
+        'HELLOTHERE':'rEq1Z0bjdwc'
+    };
+    //set typed var
+    var typed = '';
+    $('body').on('keyup', function(e) {
+        //get last typed character
+        var char = String.fromCharCode(e.keyCode) || String.fromCharCode(e.which);
+        //add to variable
+        typed += char;
+        //loop secret words
+        $.each(secrets, function(secretWord,secretLink){
+
+            //get last typed word from length of secret word
+            var wordToCheck = typed.substring(typed.length - secretWord.length);
+            //check if typed word matches secret word
+            if(wordToCheck == secretWord){
+                console.log('You found a secret!');
+                typed = '';
+                //add youtube iframe
+                $("#secret-content iframe").remove();
+                $('<iframe width="100%" height="95%" frameborder="0" allowfullscreen></iframe>')
+                .attr('src', 'http://www.youtube.com/embed/' + secretLink + '?autoplay=0')
+                .appendTo('#secret-content');
+                //show secret modal
+                $('#secret-modal').css('display','block');
+            }
+
+        });
+    });
+    
+    //hide video on click off
+    $('body').click(function() {
+        if ($('#secret-modal').is(':visible')) {
+            $('#secret-modal').hide();
+            $("#secret-content iframe").remove();
+        }
+    });
+});
