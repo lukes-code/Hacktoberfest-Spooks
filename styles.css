@@ -247,6 +247,8 @@ body {
   color: rgb(255, 255, 255);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap');
 
 body {
   padding: 0px;
@@ -259,7 +261,7 @@ section#trick-or-treat {
   background: rgb(236, 119, 10);
   display: flex;
   flex-wrap: wrap;
-  min-height: 400px;
+  min-height: 600px;
   justify-content: center;
   align-items: center;
   padding: 20px 50px;
@@ -274,9 +276,7 @@ section#trick-or-treat div {
 
 section#trick-or-treat div h2 {
   font-family: 'Creepster', cursive;
-  letter-spacing: 0.5rem;
   font-size: 4rem;
-  color: black;
 }
 
 section#trick-or-treat div button {
@@ -554,63 +554,4 @@ footer {
 }
 .sponsor{
 	padding: 0px 40px;
-  color: black;
-  font-size: 2rem;
-/* Spooky jokes css section */
-
-.trick-or-treat-container{
-  color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
-}
-
-.trick-or-treat-container article{
-  width: 50%;
-}
-
-@media screen and (max-width: 825px) {
-  .trick-or-treat-container{
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-#secret-modal{
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4);
-}
-#secret-content {
-  background-color: rgb(236, 119, 10);
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #000;
-  width: 80%;
-  height: 80%;
-}
-#secret-close {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #000;
-  font-size: 28px;
-  font-weight: bold;
-  width: 100%;
-  height: 4%;
-}
-#secret-close:hover,
-#secret-close:focus {
-  color: #fff;
-  text-decoration: none;
-  cursor: pointer;
 }
