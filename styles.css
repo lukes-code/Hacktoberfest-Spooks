@@ -599,3 +599,7 @@ section#trick-or-treat div .dftrick {
   text-decoration: none;
   cursor: pointer;
 }
+
+.soc {
+  background-color: rgb(236, 119, 10);
+}
