@@ -406,8 +406,8 @@ section#trick-or-treat div .treat {
   background-image: url(Images/treat.png);
 }
 
-section#trick-or-treat div .dftreat {
-  background-image: url(Images/dftreat.png);
+section#trick-or-treat div .dftrick {
+  background-image: url(Images/dftrick.png);
 }
 
 /* End of Trick or Treat */
