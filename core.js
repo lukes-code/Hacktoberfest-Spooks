@@ -19,3 +19,14 @@ document.addEventListener('click', function (e) {
     };
 
 }, false);
+
+(function newFact() {
+    var facts = ['Where does a ghost go on vacation? Mali-boo.',
+     'What is in a ghost’s nose? Boo-gers.',
+      'Why did the headless horseman go into business? He wanted to get ahead in life.',
+      'What’s it like to be kissed by a vampire? It’s a pain in the neck.',
+      'What do you call a cleaning skeleton? The grim sweeper.',
+      'What do birds say on Halloween? "Trick or tweet!".'];
+    var randomFact = Math.floor(Math.random() * facts.length);
+    document.getElementById('spookyjokes').innerHTML = facts[randomFact];
+  })();

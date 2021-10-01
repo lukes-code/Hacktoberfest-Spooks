@@ -166,7 +166,7 @@ body{
 /* Trick or Treat */
 
 section#trick-or-treat {
-    background: orange;
+    background: rgb(236, 119, 10);
     display: flex;
     flex-wrap: wrap;
     min-height: 600px;
@@ -351,4 +351,8 @@ section#trick-or-treat div .treat{
 .footer-text{
   margin: auto;
   color: #fff;
+}
+
+#spookyjokes{
+  color: white;
 }
