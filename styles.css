@@ -1,5 +1,126 @@
 /* CSS Here pls */
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  overflow-x: hidden !important;
+  background-color: #000000;
+}
 
+.container {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+footer {
+  bottom: 0;
+  width: 100%;
+}
+
+.imptext h2 {
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: -0.035em;
+  /* Gray 1 */
+  color: #ffffff;
+}
+
+
+
+.imptext p {
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: -0.035em;
+  /* Gray 1 */
+  color: #ffffff;
+}
+
+.imptext a {
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+  /* Gray 1 */
+  color: #333333;
+}
+.imptext2 h2 {
+    font-family: "Space Mono", monospace;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: -0.035em;
+    /* Gray 1 */
+    color: #ffffff;
+}
+  
+  
+  
+  .imptext2 p {
+    font-family: "Space Mono", monospace;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: -0.035em;
+    /* Gray 1 */
+    color: #ffffff;
+  }
+  
+  .imptext2 a {
+    font-family: "Space Mono", monospace;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    /* Gray 1 */
+    color: #333333;
+  }
+nav {
+  width: auto;
+  height: 1.5rem;
+  left: 1rem;
+  top: 1.25rem;
+
+  font-family: "Inconsolata", monospace;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 1080px) {
+  .imptext h2 {
+    font-size: 4rem;
+    max-width: 30rem;
+    line-height: 6rem;
+  }
+  .imptext p {
+    font-size: 1.5rem;
+    max-width: 30rem;
+    line-height: 2.5rem;
+  }
+  .imptext2 h2 {
+    font-size: 4rem;
+    line-height: 6rem;
+  }
+  .imptext2 p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+  
+}
+
+/* Navbar */
 html{
 scroll-behavior: smooth;
 }
@@ -34,5 +155,162 @@ body {
     color: black;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap');
 
+body{
+    padding: 0px;
+    margin: 0px;
+}
 
+/* Trick or Treat */
+
+section#trick-or-treat {
+    background: orange;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 600px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+    font-family: 'Crimson Text', serif;
+    font-size: 1.4rem;
+}
+
+section#trick-or-treat div{
+    flex: 1;
+    text-align: center;
+}
+
+section#trick-or-treat div h2{
+    font-family: 'Creepster', cursive;
+    font-size: 4rem;
+}
+
+section#trick-or-treat div button{
+    border: none;
+    border-radius: 3px;
+    background-color: #000;
+    color: #fff;
+    padding: 15px 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+section#trick-or-treat div button:focus, section#trick-or-treat div button:active{
+    -webkit-animation: jello-vertical 0.9s both;
+	        animation: jello-vertical 0.9s both;
+}
+@-webkit-keyframes jello-vertical {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+              transform: scale3d(0.75, 1.25, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+              transform: scale3d(1.25, 0.75, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(0.85, 1.15, 1);
+              transform: scale3d(0.85, 1.15, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+              transform: scale3d(1.05, 0.95, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+              transform: scale3d(0.95, 1.05, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+  }
+  @keyframes jello-vertical {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+    30% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+              transform: scale3d(0.75, 1.25, 1);
+    }
+    40% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+              transform: scale3d(1.25, 0.75, 1);
+    }
+    50% {
+      -webkit-transform: scale3d(0.85, 1.15, 1);
+              transform: scale3d(0.85, 1.15, 1);
+    }
+    65% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+              transform: scale3d(1.05, 0.95, 1);
+    }
+    75% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+              transform: scale3d(0.95, 1.05, 1);
+    }
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+              transform: scale3d(1, 1, 1);
+    }
+  }
+
+section#trick-or-treat div #game {
+    height: 350px;
+    width: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 40px auto;
+    -webkit-animation: pulsate-fwd 1s ease-in-out infinite both;
+	        animation: pulsate-fwd 1s ease-in-out infinite both;
+}
+@-webkit-keyframes pulsate-fwd {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.05);
+              transform: scale(1.05);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes pulsate-fwd {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.05);
+              transform: scale(1.05);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+
+section#trick-or-treat div .start{
+    background-image: url(Images/trick-or-treat.png);
+}
+
+section#trick-or-treat div .trick{
+    background-image: url(Images/trick.png);
+}
+
+section#trick-or-treat div .treat{
+    background-image: url(Images/treat.png);
+}
+
+/* End of Trick or Treat */
