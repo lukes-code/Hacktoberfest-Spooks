@@ -543,7 +543,8 @@ footer {
 }
 
 #spookyjokes {
-	color: white;
+	color: black;
+  font-size: 1.5rem;
 }
 .hacktober{
 	padding: 10px;
@@ -556,27 +557,8 @@ footer {
 	padding: 0px 40px;
   color: black;
   font-size: 2rem;
-/* Spooky jokes css section */
-
-.trick-or-treat-container{
-  color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
 }
 
-.trick-or-treat-container article{
-  width: 50%;
-}
-
-@media screen and (max-width: 825px) {
-  .trick-or-treat-container{
-    flex-direction: column;
-    justify-content: center;
-  }
-}
 #secret-modal{
   display: none;
   position: fixed;
