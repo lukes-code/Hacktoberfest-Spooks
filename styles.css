@@ -50,6 +50,7 @@ body {
   transform: scale(1.05);
 }
 
+/* style for the card img */
 .card img {
   width: 200px;
   height: 200px;
@@ -58,6 +59,7 @@ body {
   border: 1px solid #000;
 }
 
+/*style for container a*/
 .container a {
   text-decoration: none;
   color: white;
@@ -68,6 +70,7 @@ body {
   border-radius: 5px;
   transition: all 0.2s ease-in-out;
 }
+/*style for container h2*/
 .container h2{
   color: orange;
 }
@@ -75,6 +78,7 @@ body {
   background-image: url("./Scarecrow.jpeg");
 }
 
+/*styling for container a on hover*/
 .container a:hover {
   background-color: #000;
   color: orange;
