@@ -226,15 +226,107 @@ body {
   font-family: 'Space Mono', monospace;
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  background: rgba(22,22,22,0.85);
+  z-index: 100000;
+}
+.header__logo {
+  position: relative;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+.header__logo a {
+  font-weight: 700;
+  color: #fff;
+  font-size: 17px;
+  padding: 14px 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+#button-hamburger {
+  display: none;
+  z-index: 999;
+}
+.topnav {
+  display: grid;
+  z-index: 99;
+  width: auto;
+  position: relative;
+  transform: translate(0, 0);
+  grid-auto-flow: column;
+  top: 0;
+  text-align: center;
+}
+@media screen and (max-width: 670px) {
+  .topnav {
+    grid-auto-flow: row;
+    background-color: #222;
+    position: absolute;
+    transform: translate(-300px, 0);
+    transition: transform 0.3s ease-in-out;
+    margin: 0 auto;
+    top: 75px;
+    text-align: left;
+  }
+  .topnav a{
+    text-decoration: none;
+    display: inline-block;
+  }
+  .topnav.open {
+    transform: translate(0,0);
+    width: 100%;
+  }
+  #button-hamburger {
+    display: block;
+    background-color: #000;
+    padding: 19px 17px;
+    border: none;
+    border-radius: 3px;
+    font-size: 23px;
+    color: #fff;
+    cursor: pointer;
+  }
+  #button-hamburger:hover {
+    background-color: #333;
+  }
+}
+@media screen and (min-width: 670px) and (max-width: 1000px) {
+  #button-hamburger {
+    display: none;
+    background-color: inherit;
+  }
+  .topnav {
+    width: auto;
+    background-color: inherit;
+    position: relative;
+    transform: translate(0, 0);
+    grid-auto-flow: column;
+    top: 0;
+    text-align: left;
+  }
+}
+
 .topnav {
   overflow: hidden;
-  background-color: rgb(255, 255, 255);
 }
 
 .topnav a {
-  float: left;
   color: #ffffff;
-  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
