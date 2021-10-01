@@ -80,7 +80,13 @@ body {
 /* Add some padding inside the card container */
 .container {
   padding: 2px 16px;
+
+  background-image: url("./Scarecrow.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 .contacts {
   display: flex;
   justify-content: space-evenly;
@@ -115,10 +121,6 @@ body {
 .container {
   max-width: 100% !important;
   overflow-x: hidden !important;
-}
-footer {
-  bottom: 0;
-  width: 100%;
 }
 
 .imptext h2 {
@@ -470,13 +472,37 @@ section#trick-or-treat div .dftrick {
   flex-direction: column;
   align-items: center;
 }
-
 footer {
   margin: auto;
   width: 100%;
   padding: 40px;
   height: auto;
   background-color: #f4f0e1;
+  display: flex;
+  align-items: center;
+  justify-content:space-around
+}
+.footer-garnish{
+  
+  text-align: center;
+}
+@media only screen and (max-width: 768px){
+  .footer-garnish{
+   display:none;
+  }
+  .sponsor{
+    min-width: 100%;
+    max-height: 75px;
+    }
+
+}
+
+
+.leaves{
+  margin: auto;
+}
+.footer-content{ 
+  
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -558,7 +584,9 @@ footer {
   color: black;
   font-size: 2rem;
 }
-
+.leaves{
+  height:80px;
+}
 #secret-modal{
   display: none;
   position: fixed;
