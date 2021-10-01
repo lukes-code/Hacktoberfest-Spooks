@@ -71,6 +71,9 @@ body {
 .container h2{
   color: orange;
 }
+.first-section{
+  background-image: url("./Scarecrow.jpeg");
+}
 
 .container a:hover {
   background-color: #000;
@@ -80,8 +83,6 @@ body {
 /* Add some padding inside the card container */
 .container {
   padding: 2px 16px;
-
-  background-image: url("./Scarecrow.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
