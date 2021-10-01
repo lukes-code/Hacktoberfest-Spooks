@@ -80,7 +80,13 @@ body {
 /* Add some padding inside the card container */
 .container {
   padding: 2px 16px;
+
+  background-image: url("./Scarecrow.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 .contacts {
   display: flex;
   justify-content: space-evenly;
