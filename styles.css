@@ -313,4 +313,11 @@ section#trick-or-treat div .treat{
     background-image: url(Images/treat.png);
 }
 
+.footer{
+  margin: auto;
+  width: 100%;
+  padding: 20px;
+  height: 70px;
+  background-color: #2a332f
+}
 /* End of Trick or Treat */
