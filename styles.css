@@ -541,6 +541,25 @@ section#trick-or-treat div .dftreat {
   right: -0.6rem;
 }
 
-#spookyjokes {
+/* Spooky jokes css section */
+
+.trick-or-treat-container{
   color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
 }
+
+.trick-or-treat-container article{
+  width: 50%;
+}
+
+@media screen and (max-width: 825px) {
+  .trick-or-treat-container{
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
