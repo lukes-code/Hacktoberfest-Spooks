@@ -8,14 +8,23 @@ document.addEventListener('click', function (e) {
         const newRand = Math.random();
         //Create 50/50 change of trick or treat
         if (newRand < 0.5){
-            console.log('trick');
-            element.classList.add("trick");
-            element.classList.remove("start","treat");
-        } else {
-            console.log('treat');
-            element.classList.add("treat");
-            element.classList.remove("start","trick");
-        }
+            if(newRand>0.02)
+             {
+             console.log('trick');
+             element.classList.add("trick");
+             element.classList.remove("start","treat","dftrick");
+               }else {
+                 console.log('deep fried trick ');
+                 element.classList.add("dftrick");
+                 element.classList.remove("start","treat","trick");
+ 
+ 
+             }
+         } else {
+             console.log('treat');
+             element.classList.add("treat");
+             element.classList.remove("start","trick","dftrick");
+         }
     };
 
 }, false);
@@ -66,3 +75,14 @@ $(document).ready(function(){
         }
     });
 });
+
+(function newFact() {
+    var facts = ['Where does a ghost go on vacation? Mali-boo.',
+     'What is in a ghost’s nose? Boo-gers.',
+      'Why did the headless horseman go into business? He wanted to get ahead in life.',
+      'What’s it like to be kissed by a vampire? It’s a pain in the neck.',
+      'What do you call a cleaning skeleton? The grim sweeper.',
+      'What do birds say on Halloween? "Trick or tweet!".'];
+    var randomFact = Math.floor(Math.random() * facts.length);
+    document.getElementById('spookyjokes').innerHTML = facts[randomFact];
+  })();
