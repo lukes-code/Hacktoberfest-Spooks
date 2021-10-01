@@ -58,7 +58,7 @@ $(document).ready(function(){
                 //add youtube iframe
                 $("#secret-content iframe").remove();
                 $('<iframe width="100%" height="95%" frameborder="0" allowfullscreen></iframe>')
-                .attr('src', 'http://www.youtube.com/embed/' + secretLink + '?autoplay=0')
+                .attr('src', 'https://www.youtube.com/embed/' + secretLink + '?autoplay=0')
                 .appendTo('#secret-content');
                 //show secret modal
                 $('#secret-modal').css('display','block');
