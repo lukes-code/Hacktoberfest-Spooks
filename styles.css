@@ -340,7 +340,7 @@ section#trick-or-treat div .dftreat {
   flex-wrap: wrap;
 }
 
-.footer {
+#footer {
   margin: auto;
   width: 100%;
   padding: 40px;
