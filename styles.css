@@ -130,7 +130,138 @@ body {
     margin: 0;
     font-family: "Space Mono", monospace;
 }
+/* amanj752 header  responsiveness */
 
+/* mobile-header */
+
+@media screen and (max-width: 700px) {
+  a{
+    color: #ffffff;;
+    text-decoration: none;
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+  }
+  header{
+    width: 100%;
+    height: 40px;
+    display: block;
+    background: black;
+    border-radius: 14px;
+  }
+  .inner_header{
+    width: 100%;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+  }
+  .navhide{
+      display: none;
+  }
+  #wrapper{
+      display: inline-block;
+      border-radius: 500px;
+      padding: 50px;
+      cursor: pointer;
+      position: absolute;
+      top: 0%;
+  }
+  .line{
+      position: absolute;
+      height: 4px;
+      width: 32%;
+      background: yellow;
+      border-radius: 8px;
+      transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.35s;
+  }
+  .top{
+      top: 5%;
+  }
+  .middle{
+      top: 16%;
+  }
+  .bottom{
+      top: 27%;
+  }
+  .icon.close .top{
+      transform: rotate(45deg);
+      position: absolute;
+      top: 17%;
+  }
+  .icon.close .middle, .icon.close .bottom{
+      transform: rotate(-45deg);
+      position: absolute;
+      top: 17%;
+  }
+  .box{
+      position: absolute;
+      top: 41px;
+      left: 23%;
+      width: 304%;
+      height: 80vh;
+      background: black;
+      /* opacity: 2; */
+      transform: scale(0);
+      transition-property: opacity, transform;
+      transition-duration: 0.65s;
+      border-radius: 63px;
+  }
+  .icon.close .box {
+      opacity: 2;
+      transform: scale(1);
+      z-index: 2;
+  }
+  .icon.close{
+    opacity: 2;
+  }
+  .nav-links{
+  text-decoration: none;
+  padding: 81px;
+  font-weight: bold;
+  font-size: 23px;
+  color: yellow;
+}
+ul {
+  margin: 71px -3px;
+}
+
+li{
+  padding: 10px 24px;
+}
+.section1{
+  position: absolute;
+  width: 30px;
+  height: 45px;
+  background: gainsboro;
+  width: 96%;
+  height: 59vh;
+  border-radius: 54px;
+  left: 7px;
+}
+}
+/* end of mobile-header */
+@media(min-width:320px) and (max-width:700px){
+  .topnav{
+    display: none;
+  }
+  .main-section{
+    margin-top: 20px;
+    z-index: -1;
+  }
+}
+@media(min-width:700px) and (max-width:2000px){
+.dview{
+  display: none;
+  z-index: 2;
+}
+}
+/* amanj752 header  responsiveness end */
+
+
+@media (min-width:700px) and (max-width:2000px){
 .topnav {
     overflow: hidden;
     background-color: rgb(255, 255, 255);
@@ -154,7 +285,7 @@ body {
     background-color: rgb(236, 119, 10);
     color: rgb(255, 255, 255);
 }
-
+}
 @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap');
 
