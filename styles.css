@@ -316,8 +316,12 @@ section#trick-or-treat div .treat{
 .footer{
   margin: auto;
   width: 100%;
-  padding: 20px;
-  height: 70px;
+  padding: 40px;
+  height: 120px;
   background-color: #2a332f
+}
+.footer-text{
+  margin: auto;
+  color:white;
 }
 /* End of Trick or Treat */
