@@ -60,13 +60,16 @@ body {
 
 .container a {
   text-decoration: none;
-  color: #000;
+  color: white;
   display: block;
   margin-bottom: 10px;
   padding: 10px 20px;
   border: 1px solid #000;
   border-radius: 5px;
   transition: all 0.2s ease-in-out;
+}
+.container h2{
+  color: orange;
 }
 
 .container a:hover {
@@ -85,7 +88,8 @@ body {
   flex-wrap: wrap;
 }
 .intro {
-  color: rgb(0, 0, 0);
+  margin-top: 100px;
+  color: white;
   display: flex;
   justify-content: center;
 }
