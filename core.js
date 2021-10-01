@@ -84,5 +84,6 @@ $(document).ready(function(){
       'What do you call a cleaning skeleton? The grim sweeper.',
       'What do birds say on Halloween? "Trick or tweet!".'];
     var randomFact = Math.floor(Math.random() * facts.length);
+    // 2005 called, it wants its js back:
     document.getElementById('spookyjokes').innerHTML = facts[randomFact];
   })();
