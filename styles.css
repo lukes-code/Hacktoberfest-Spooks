@@ -1,4 +1,159 @@
 /* CSS Here pls */
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  overflow-x: hidden !important;
+  background-color: #000000;
+}
+
+.container {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+footer {
+  bottom: 0;
+  width: 100%;
+}
+
+.imptext h2 {
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  font-weight: bold;
+  letter-spacing: -0.035em;
+  /* Gray 1 */
+  color: #ffffff;
+}
+
+
+
+.imptext p {
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: -0.035em;
+  /* Gray 1 */
+  color: #ffffff;
+}
+
+.imptext a {
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+  /* Gray 1 */
+  color: #333333;
+}
+.imptext2 h2 {
+    font-family: "Space Mono", monospace;
+    font-style: normal;
+    font-weight: bold;
+    letter-spacing: -0.035em;
+    /* Gray 1 */
+    color: #ffffff;
+}
+  
+  
+  
+  .imptext2 p {
+    font-family: "Space Mono", monospace;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: -0.035em;
+    /* Gray 1 */
+    color: #ffffff;
+  }
+  
+  .imptext2 a {
+    font-family: "Space Mono", monospace;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    /* Gray 1 */
+    color: #333333;
+  }
+nav {
+  width: auto;
+  height: 1.5rem;
+  left: 1rem;
+  top: 1.25rem;
+
+  font-family: "Inconsolata", monospace;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 1080px) {
+  .imptext h2 {
+    font-size: 4rem;
+    max-width: 30rem;
+    line-height: 6rem;
+  }
+  .imptext p {
+    font-size: 1.5rem;
+    max-width: 30rem;
+    line-height: 2.5rem;
+  }
+  .imptext2 h2 {
+    font-size: 4rem;
+    line-height: 6rem;
+  }
+  .imptext2 p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+  
+}
+
+/* Navbar */
+html{
+scroll-behavior: smooth;
+}
+
+/* Navbar */
+body {
+    margin: 0;
+    font-family: "Space Mono", monospace;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+}
+
+.topnav a {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color:rgb(236, 119, 10);
+    color: rgb(255, 255, 255);
+}
+
+.topnav a.active {
+    background-color: rgb(236, 119, 10);
+    color: rgb(255, 255, 255);
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap');
@@ -159,6 +314,7 @@ section#trick-or-treat div .treat{
 }
 
 /* End of Trick or Treat */
+
 /*Contact Page CSS*/
 .card {
   /* Add shadows to create the "card" effect */
@@ -183,4 +339,16 @@ section#trick-or-treat div .treat{
   justify-content: space-evenly;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.footer{
+  margin: auto;
+  width: 100%;
+  padding: 40px;
+  height: 120px;
+  background-color: #2a332f
+}
+.footer-text{
+  margin: auto;
+  color: #fff;
 }
