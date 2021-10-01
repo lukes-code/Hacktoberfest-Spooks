@@ -247,8 +247,6 @@ body {
   color: rgb(255, 255, 255);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap');
 
 body {
   padding: 0px;
@@ -261,7 +259,7 @@ section#trick-or-treat {
   background: rgb(236, 119, 10);
   display: flex;
   flex-wrap: wrap;
-  min-height: 600px;
+  min-height: 400px;
   justify-content: center;
   align-items: center;
   padding: 20px 50px;
@@ -276,7 +274,9 @@ section#trick-or-treat div {
 
 section#trick-or-treat div h2 {
   font-family: 'Creepster', cursive;
+  letter-spacing: 0.5rem;
   font-size: 4rem;
+  color: black;
 }
 
 section#trick-or-treat div button {
@@ -542,7 +542,8 @@ section#trick-or-treat div .dftrick {
 }
 
 #spookyjokes {
-  color: white;
+  color: black;
+  font-size: 2rem;
 }
 
 #secret-modal{
