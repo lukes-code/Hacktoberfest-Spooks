@@ -247,8 +247,6 @@ body {
   color: rgb(255, 255, 255);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap');
 
 body {
   padding: 0px;
@@ -261,7 +259,7 @@ section#trick-or-treat {
   background: rgb(236, 119, 10);
   display: flex;
   flex-wrap: wrap;
-  min-height: 600px;
+  min-height: 400px;
   justify-content: center;
   align-items: center;
   padding: 20px 50px;
@@ -276,7 +274,9 @@ section#trick-or-treat div {
 
 section#trick-or-treat div h2 {
   font-family: 'Creepster', cursive;
+  letter-spacing: 0.5rem;
   font-size: 4rem;
+  color: black;
 }
 
 section#trick-or-treat div button {
@@ -471,21 +471,22 @@ section#trick-or-treat div .dftrick {
   align-items: center;
 }
 
-#footer {
+footer {
   margin: auto;
   width: 100%;
   padding: 40px;
-  height: 120px;
-  background-color: #2a332f;
+  height: auto;
+  background-color: #f4f0e1;
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 .footer-text {
+  padding: 10px;
+  font-family: Poppins,sans-serif;
   margin: auto;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
+  color: rgba(181,58,37);
+
 }
 @media only screen and (max-width: 1000px) {
   .footer-text {
@@ -507,7 +508,7 @@ section#trick-or-treat div .dftrick {
 
 .footer-heart {
   position: relative;
-  background-color: orange;
+  background-color: #91a88c;
   height: 1rem;
   width: 1rem;
   position: relative;
@@ -525,43 +526,39 @@ section#trick-or-treat div .dftrick {
 
 .footer-heart::before,
 .footer-heart::after {
-  content: '';
-  position: absolute;
-  background: orange;
-  width: 1rem;
-  height: 1rem;
-  border-radius: 100%;
+	content: '';
+	position: absolute;
+	background: #91a88c;
+	width: 1rem;
+	height: 1rem;
+	border-radius: 100%;
 }
 .footer-heart::before {
-  top: -0.6rem;
-  left: 0;
+	top: -0.6rem;
+	left: 0;
 }
 .footer-heart::after {
-  top: 0;
-  right: -0.6rem;
+	top: 0;
+	right: -0.6rem;
 }
 
-/* Spooky jokes css section */
-
-.trick-or-treat-container{
-  color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
+#spookyjokes {
+	color: black;
+  font-size: 1.5rem;
+}
+.hacktober{
+	padding: 10px;
+	height: 100px;
+}
+.sponsors{
+	padding: 20px;
+}
+.sponsor{
+	padding: 0px 40px;
+  color: black;
+  font-size: 2rem;
 }
 
-.trick-or-treat-container article{
-  width: 50%;
-}
-
-@media screen and (max-width: 825px) {
-  .trick-or-treat-container{
-    flex-direction: column;
-    justify-content: center;
-  }
-}
 #secret-modal{
   display: none;
   position: fixed;
