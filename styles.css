@@ -133,12 +133,12 @@ body {
 
 .topnav {
     overflow: hidden;
-    background-color: rgb(5, 5, 5);
+    background-color: rgb(255, 255, 255);
 }
 
 .topnav a {
     float: left;
-    color: #070606;
+    color: #ffffff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -147,12 +147,12 @@ body {
 
 .topnav a:hover {
     background-color:rgb(236, 119, 10);
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .topnav a.active {
-    background-color: rgb(236, 119, 10);
-    color: black;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
