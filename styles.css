@@ -346,7 +346,9 @@ body {
 }
 
 /* Trick or Treat */
-
+.character-img {
+  width: 500px;
+}
 section#trick-or-treat {
   background: rgb(236, 119, 10);
   display: flex;
