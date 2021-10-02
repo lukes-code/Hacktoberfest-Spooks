@@ -10,13 +10,17 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <navbar class="topnav">
-    <a href="index.html">Home</a>
-    <a class="active" href="#Contact">Contact</a>
-    <a href="https://www.youtube.com/watch?v=n_qbGJuxCYY">Click Me!</a>
-  </navbar>
-</body>
-<body>
+    <div class="header">
+      <button tabindex="0" id="button-hamburger" aria-label="navigation-menu">☰</button>
+      <navbar class="topnav">
+        <a href="index.html">Home</a>
+        <a class="active" href="#Contact">Contact</a>
+        <a href="https://www.youtube.com/watch?v=n_qbGJuxCYY">Click Me!</a>
+      </navbar>
+      <navbar class="header__logo">
+        <a href="./index.html">Spooky</a>
+      </nav>
+    </div>
     <div class="intro">
         <h1>Contact Us</h1>
     </div>
@@ -140,6 +144,7 @@
         <li><a href="https://facebook.com"><img src="img/facebook.png"></a></li>
         <li><a href="https://github.com"><img src="img/github.png"></a></li>
         <li><a href="https://discord.com"><img src="img/discord.png"></a></li>
-      </ul>
+    </ul>
+    <script src="navbar.js"></script>
 </body>
 </html>
