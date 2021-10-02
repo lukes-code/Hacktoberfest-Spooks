@@ -86,3 +86,18 @@ $(document).ready(function(){
     var randomFact = Math.floor(Math.random() * facts.length);
     document.getElementById('spookyjokes').innerHTML = facts[randomFact];
   })();
+
+
+// Find the witch
+
+const witch = document.querySelector('.the-witch');
+const btnReward = document.querySelector('.button--reward');
+const section2 = document.querySelector('.section--2');
+
+witch.addEventListener('click', function(){
+    btnReward.classList.remove('hidden');
+    section2.scrollIntoView({
+        behavior: 'smooth',
+    });
+})
+

@@ -507,6 +507,82 @@ section#trick-or-treat div .dftrick {
 
 /* End of Trick or Treat */
 
+/* Find the Witch */
+
+.container--2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(236, 119, 10);
+  padding: 20px 50px;
+  border-bottom: 10px solid #000;
+}
+
+.container--2__text h2 {
+  font-family: 'Creepster', cursive;
+  color: #000;
+  letter-spacing: 0.5rem;
+  font-size: 4rem;
+}
+
+.container--2 p, .button--reward{
+  font-family: "Crimson Text", serif;
+  font-size: 1.4rem;
+  margin-bottom: 64px;
+}
+
+.container--2 p{
+  padding-left: 48px;
+}
+
+.container--2__text{
+  justify-self: center;
+  padding-left: 64px;
+}
+
+.container--2__img p{
+    font-family: 'Creepster', cursive;
+    color: black;
+    padding-left: 30px;
+    font-size: 32px;
+}
+
+.witch-img{
+  height: 350px;
+  margin-right: 100px;
+}
+
+.the-witch{
+  height: 35px;
+}
+
+.button--reward{
+  background-color: black;
+  color: white;
+  border: 0;
+  font-size: 56px;
+  font-family: inherit;
+  padding: 16px 32px;
+  margin-left: 64px;
+  border-radius: 15px;
+}
+
+.button--reward:hover{
+  background-color: #222;
+  outline: none;
+  cursor: pointer;
+}
+
+.button--reward:focus{
+  outline: none;
+}
+
+.hidden{
+  display: none;
+}
+
+/* End of Find the Witch */
+
 /*Contact Page CSS*/
 .card {
   /* Add shadows to create the "card" effect */
