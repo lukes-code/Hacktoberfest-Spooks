@@ -1,5 +1,9 @@
 //Trick or treat logic
-document.addEventListener('click', function (e) {
+
+//Create query Selector for the button Click Event
+const trickOrTreat = document.querySelector(".trick-or-treat")
+
+trickOrTreat.addEventListener('click', function (e) {
 
     var element = document.getElementById("game");
 	// If the clicked element doesn't have the right selector, bail
