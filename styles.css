@@ -16,6 +16,7 @@ html {
     background-size: cover; */
   background: orange;
   font-family: 'Creepster', cursive;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -26,7 +27,7 @@ html {
 html,
 body {
   height: 100%;
-  overflow-x: hidden !important;
+  overflow-x: visible !important;
   background-color: #000000;
 }
 
@@ -215,10 +216,6 @@ nav {
   }
 }
 
-/* Navbar */
-html {
-  scroll-behavior: smooth;
-}
 
 /* Navbar */
 body {
