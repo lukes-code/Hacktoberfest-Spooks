@@ -59,7 +59,7 @@ body {
   border: 1px solid #000;
 }
 
-.container a {
+.card a {
   text-decoration: none;
   color: white;
   display: block;
