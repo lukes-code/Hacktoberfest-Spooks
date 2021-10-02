@@ -16,6 +16,7 @@ html {
     background-size: cover; */
   background: orange;
   font-family: 'Creepster', cursive;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -215,10 +216,6 @@ nav {
   }
 }
 
-/* Navbar */
-html {
-  scroll-behavior: smooth;
-}
 
 /* Navbar */
 body {
