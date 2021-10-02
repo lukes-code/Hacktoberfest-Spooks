@@ -1,10 +1,10 @@
 /* CSS Here pls */
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap");
 
 /*Contact Page CSS*/
 html {
@@ -15,7 +15,7 @@ html {
     -o-background-size: cover;
     background-size: cover; */
   background: orange;
-  font-family: 'Creepster', cursive;
+  font-family: "Creepster", cursive;
   scroll-behavior: smooth;
 }
 
@@ -69,10 +69,10 @@ body {
   border-radius: 5px;
   transition: all 0.2s ease-in-out;
 }
-.container h2{
+.container h2 {
   color: orange;
 }
-.first-section{
+.first-section {
   background-image: url("./Scarecrow.jpeg");
 }
 
@@ -126,7 +126,7 @@ body {
 }
 
 .imptext h2 {
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   font-style: normal;
   font-weight: bold;
   letter-spacing: -0.035em;
@@ -135,7 +135,7 @@ body {
 }
 
 .imptext p {
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   font-style: normal;
   font-weight: normal;
   letter-spacing: -0.035em;
@@ -144,7 +144,7 @@ body {
 }
 
 .imptext a {
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   font-style: normal;
   font-weight: normal;
   letter-spacing: -0.035em;
@@ -153,7 +153,7 @@ body {
   color: #333333;
 }
 .imptext2 h2 {
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   font-style: normal;
   font-weight: bold;
   letter-spacing: -0.035em;
@@ -162,7 +162,7 @@ body {
 }
 
 .imptext2 p {
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   font-style: normal;
   font-weight: normal;
   letter-spacing: -0.035em;
@@ -171,7 +171,7 @@ body {
 }
 
 .imptext2 a {
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   font-style: normal;
   font-weight: normal;
   letter-spacing: -0.035em;
@@ -185,7 +185,7 @@ nav {
   left: 1rem;
   top: 1.25rem;
 
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   font-style: normal;
   font-weight: bold;
   font-size: 1.5rem;
@@ -216,11 +216,10 @@ nav {
   }
 }
 
-
 /* Navbar */
 body {
   margin: 0;
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
 }
 
 .header {
@@ -239,7 +238,7 @@ body {
   align-items: center;
   -webkit-transition: 0.6s;
   transition: 0.6s;
-  background: rgba(22,22,22,0.85);
+  background: rgba(22, 22, 22, 0.85);
   z-index: 100000;
 }
 .header__logo {
@@ -280,12 +279,12 @@ body {
     top: 75px;
     text-align: left;
   }
-  .topnav a{
+  .topnav a {
     text-decoration: none;
     display: inline-block;
   }
   .topnav.open {
-    transform: translate(0,0);
+    transform: translate(0, 0);
     width: 100%;
   }
   #button-hamburger {
@@ -339,13 +338,15 @@ body {
   color: rgb(255, 255, 255);
 }
 
-
 body {
   padding: 0px;
   margin: 0px;
 }
 
 /* Trick or Treat */
+.character-img {
+  width: 500px;
+}
 
 section#trick-or-treat {
   background: rgb(236, 119, 10);
@@ -355,7 +356,7 @@ section#trick-or-treat {
   justify-content: center;
   align-items: center;
   padding: 20px 50px;
-  font-family: 'Crimson Text', serif;
+  font-family: "Crimson Text", serif;
   font-size: 1.4rem;
 }
 
@@ -365,7 +366,7 @@ section#trick-or-treat div {
 }
 
 section#trick-or-treat div h2 {
-  font-family: 'Creepster', cursive;
+  font-family: "Creepster", cursive;
   letter-spacing: 0.5rem;
   font-size: 4rem;
   color: black;
@@ -570,39 +571,34 @@ footer {
   background-color: #f4f0e1;
   display: flex;
   align-items: center;
-  justify-content:space-around
+  justify-content: space-around;
 }
-.footer-garnish{
-  
+.footer-garnish {
   text-align: center;
 }
-@media only screen and (max-width: 768px){
-  .footer-garnish{
-   display:none;
+@media only screen and (max-width: 768px) {
+  .footer-garnish {
+    display: none;
   }
-  .sponsor{
+  .sponsor {
     min-width: 100%;
     max-height: 75px;
-    }
-
+  }
 }
 
-
-.leaves{
+.leaves {
   margin: auto;
 }
-.footer-content{ 
-  
+.footer-content {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 .footer-text {
   padding: 10px;
-  font-family: Poppins,sans-serif;
+  font-family: Poppins, sans-serif;
   margin: auto;
-  color: rgba(181,58,37);
-
+  color: rgba(181, 58, 37);
 }
 @media only screen and (max-width: 1000px) {
   .footer-text {
@@ -642,42 +638,42 @@ footer {
 
 .footer-heart::before,
 .footer-heart::after {
-	content: '';
-	position: absolute;
-	background: #91a88c;
-	width: 1rem;
-	height: 1rem;
-	border-radius: 100%;
+  content: "";
+  position: absolute;
+  background: #91a88c;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
 }
 .footer-heart::before {
-	top: -0.6rem;
-	left: 0;
+  top: -0.6rem;
+  left: 0;
 }
 .footer-heart::after {
-	top: 0;
-	right: -0.6rem;
+  top: 0;
+  right: -0.6rem;
 }
 
 #spookyjokes {
-	color: black;
+  color: black;
   font-size: 1.5rem;
 }
-.hacktober{
-	padding: 10px;
-	height: 100px;
+.hacktober {
+  padding: 10px;
+  height: 100px;
 }
-.sponsors{
-	padding: 20px;
+.sponsors {
+  padding: 20px;
 }
-.sponsor{
-	padding: 0px 40px;
+.sponsor {
+  padding: 0px 40px;
   color: black;
   font-size: 2rem;
 }
-.leaves{
-  height:80px;
+.leaves {
+  height: 80px;
 }
-#secret-modal{
+#secret-modal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -687,8 +683,8 @@ footer {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 #secret-content {
   background-color: rgb(236, 119, 10);
