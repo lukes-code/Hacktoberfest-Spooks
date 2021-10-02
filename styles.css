@@ -399,11 +399,11 @@ section#trick-or-treat div .start {
 }
 
 section#trick-or-treat div .trick {
-  background-image: url(Images/trick.png);
+  background-image: url(Images/trick-updated.png);
 }
 
 section#trick-or-treat div .treat {
-  background-image: url(Images/treat.png);
+  background-image: url(Images/treat-updated.png);
 }
 
 section#trick-or-treat div .dftrick {
