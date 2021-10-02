@@ -74,11 +74,13 @@ html {
   }
   .soc
   {
-    /* background-color: #cbcccb; */
+    background-color: orange;
       display: flex;
       justify-content: center;
-      margin-top: 30px;
+      margin-top: 47px;
       flex-direction: row;
+      position: relative;
+    top: 3vh;
   }
   .soc li
   {

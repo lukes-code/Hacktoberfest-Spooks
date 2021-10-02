@@ -470,6 +470,7 @@ section#trick-or-treat div .treat{
   justify-content: space-evenly;
   flex-direction: row;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .footer{
