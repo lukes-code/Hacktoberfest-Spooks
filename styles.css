@@ -300,6 +300,8 @@ body {
   #button-hamburger:hover {
     background-color: #333;
   }
+  
+  
 }
 @media screen and (min-width: 670px) and (max-width: 1000px) {
   #button-hamburger {
@@ -741,6 +743,7 @@ body {
   border-bottom: 10px solid #000;
 }
 
+
 .container--2__text h2 {
   font-family: 'Creepster', cursive;
   color: #000;
@@ -770,7 +773,53 @@ body {
   padding-left: 30px;
   font-size: 32px;
 }
-
+@media (max-width: 992px) {
+  
+  .container--2__text
+  {
+    padding: 10px;
+  }
+  .container--2__text p
+  {
+    padding-left:10px ;
+  }
+  .container--2__img
+  {
+    justify-self: flex-end;
+  }
+}
+@media (max-width: 768px) {
+  .container--2
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container--2__text
+  {
+    padding: 0;
+  }
+  .container--2__img
+  {
+    align-self: center;
+    
+  }
+}
+@media (max-width: 600px) {
+  .container--2__text p 
+  {
+    padding-left: 0;
+  }
+  .container--2__text
+  {
+    text-align: center;
+  }
+  .container--2__img
+  {
+    padding-left: 15%;
+    align-self: center;
+  }
+}
 .witch-img {
   height: 350px;
   margin-right: 100px;
@@ -881,9 +930,23 @@ body {
   justify-content: space-evenly;
 }
 
+.pumpkin-card {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  margin: 15px;
+  flex-direction: column;
+}
+
 .pumpkin-card img {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.pumpkin-card h4 {
+  margin-top: 15px;
 }
 
 .carving-section h1 {
