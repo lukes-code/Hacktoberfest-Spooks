@@ -9,15 +9,20 @@
     <title>Spooky Birb</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
 </head>
-<body style="height: 100%;min-height: 100%;">
-    <navbar class="topnav">
-        <a href="index.html">Home</a>
-        <a href="contact.html">Contact</a>
-        <a class="active" href="#Spooky">Play Spooky Birb</a>
-        <a href="https://www.youtube.com/watch?v=n_qbGJuxCYY">Click Me!</a>
-    </navbar>
+<body style="height: 100%;min-height: 100%;" class="Body">
+    <div class="header">
+        <button tabindex="0" id="button-hamburger" aria-label="navigation-menu">☰</button>
+        <navbar class="topnav">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a class="active" href="#Spooky">Play Spooky Birb</a>
+            <a href="https://www.youtube.com/watch?v=n_qbGJuxCYY">Click Me!</a>
+        </navbar>
+         <navbar class="header__logo">
+            <a href="./index.html">Spooky</a>
+        </navbar>
+    </div>
     <div class="intro">
         <h1>Play Spooky Birb</h1>
     </div>
@@ -61,7 +66,8 @@
       </div>
     
   </footer>
-
+    <!-- Reusing the already written script for Navbar for small size -->
+    <script src="navbar.js"></script>
     <script src="spooky-birb.js"></script>
 </body>
 

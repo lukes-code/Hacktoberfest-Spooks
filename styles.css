@@ -861,6 +861,14 @@ body {
 
 /* End of Find the Witch */
 
+/* Start of the Spooky bird Page Navbar Styling */
+/* Same classes are reused for Navbar-styling of Spooky-bird game page as used in home page */
+.Body{
+  position: absolute;
+}
+/* End of the Spooky bird Page Navbar Styling */
+
+
 /*Contact Page CSS*/
 .card {
   /* Add shadows to create the "card" effect */
