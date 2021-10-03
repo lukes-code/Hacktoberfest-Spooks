@@ -83,7 +83,7 @@ body {
 
 /* Add some padding inside the card container */
 .container {
-  padding: 2px 16px;
+  padding: 2px 8px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -125,7 +125,7 @@ body {
   overflow-x: hidden !important;
 }
 
-.imptext h2 {
+.imp h2 {
   font-family: 'Space Mono', monospace;
   font-style: normal;
   font-weight: bold;
@@ -134,7 +134,7 @@ body {
   color: #ffffff;
 }
 
-.imptext p {
+.imp p {
   font-family: 'Space Mono', monospace;
   font-style: normal;
   font-weight: normal;
@@ -143,7 +143,7 @@ body {
   color: #ffffff;
 }
 
-.imptext a {
+.imp a {
   font-family: 'Space Mono', monospace;
   font-style: normal;
   font-weight: normal;
@@ -152,25 +152,29 @@ body {
   /* Gray 1 */
   color: #333333;
 }
-.imptext2 h2 {
+.imp h2 {
   font-family: 'Space Mono', monospace;
   font-style: normal;
   font-weight: bold;
   letter-spacing: -0.035em;
   /* Gray 1 */
   color: #ffffff;
+  padding-left: 180px;
+  font-size: 50px;
 }
 
-.imptext2 p {
+.imp p {
   font-family: 'Space Mono', monospace;
   font-style: normal;
   font-weight: normal;
   letter-spacing: -0.035em;
   /* Gray 1 */
   color: #ffffff;
+  padding-left: 175px;
+  font-size: 25px;
 }
 
-.imptext2 a {
+.imp a {
   font-family: 'Space Mono', monospace;
   font-style: normal;
   font-weight: normal;
@@ -178,6 +182,7 @@ body {
   text-transform: uppercase;
   /* Gray 1 */
   color: #333333;
+  padding-left: 200px;
 }
 nav {
   width: auto;
