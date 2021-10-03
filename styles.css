@@ -881,9 +881,23 @@ body {
   justify-content: space-evenly;
 }
 
+.pumpkin-card {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  margin: 15px;
+  flex-direction: column;
+}
+
 .pumpkin-card img {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.pumpkin-card h4 {
+  margin-top: 15px;
 }
 
 .carving-section h1 {
