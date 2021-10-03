@@ -876,6 +876,14 @@ body {
 }
 
 .carving-container {
+  display: flex;
+  width: 70%;
+  justify-content: space-evenly;
+}
+
+.pumpkin-card img {
+  width: 150px;
+  height: 150px;
 }
 
 .carving-section h1 {
