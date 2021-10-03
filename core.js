@@ -1,5 +1,9 @@
 //Trick or treat logic
-document.addEventListener('click', function (e) {
+
+//Create query Selector for the button Click Event
+const trickOrTreat = document.querySelector(".trick-or-treat")
+
+trickOrTreat.addEventListener('click', function (e) {
 
     var element = document.getElementById("game");
 	// If the clicked element doesn't have the right selector, bail
@@ -86,3 +90,18 @@ $(document).ready(function(){
     var randomFact = Math.floor(Math.random() * facts.length);
     document.getElementById('spookyjokes').innerHTML = facts[randomFact];
   })();
+
+
+// Find the witch
+
+const witch = document.querySelector('.the-witch');
+const btnReward = document.querySelector('.button--reward');
+const section2 = document.querySelector('.section--2');
+
+witch.addEventListener('click', function(){
+    btnReward.classList.remove('hidden');
+    section2.scrollIntoView({
+        behavior: 'smooth',
+    });
+})
+

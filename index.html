@@ -17,19 +17,20 @@
         <link rel="stylesheet" href="./styles.css" />
       </head>
 <body>
-    <navbar class="topnav">
-      <a class="active" href="#home">Home</a>
-      <a href="contact.html">Contact</a>
-      <a href="spooky-birb.html">Play Spooky Birb</a>
-      <a href="#trick-or-treat">Trick or Treat</a>
-      <a href="#footer">Footer</a>
-      <a href="https://www.youtube.com/watch?v=n_qbGJuxCYY">Click Me!</a>
-  </navbar>
-</body>
-
-    <nav class="navbar navbar-default navbar-static-top mb-4">
-        Spooky
+    <div class="header">
+      <button tabindex="0" id="button-hamburger" aria-label="navigation-menu">☰</button>
+      <navbar class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="#trick-or-treat">Trick or Treat</a>
+       <a href="spooky-birb.html">Play Spooky Birb</a>
+        <a href="#footer">Footer</a>
+        <a href="https://www.youtube.com/watch?v=n_qbGJuxCYY">Click Me!</a>
+      </navbar>
+      <navbar class="header__logo">
+        <a href="./index.html">Spooky</a>
       </nav>
+    </div>
       <div class="container h-100 d-flex justify-content-start align-items-center first-section">
         <div class="row p-2">
           <div class="col-sm-12 imptext mt-2 p-4">
@@ -38,21 +39,39 @@
             </h2>
             <p>
                 Don't mind me i'm just seeing what i gotta do here!
-                Got no idea what i am doing , but it will be spooky!
+                Got no idea what i am doing , but it will be spooky! <span><img class="the-witch" src="Images/theWtich.png" alt="Image of a witch"></span>
             </p>
             <a href="#trick-or-treat"
               class="btn btn-dark btn-lg p-4 rounded-0 active mt-4">Play game</a>
           </div>
         </div>
       </div>
+      
       <section id="trick-or-treat" style="border-bottom: 10px solid #000;">
-        <div class="container h-100 d-flex">
-            <div class="row">
-                <div class="col-12 imptext2 px-4"><h2>Spooky Jokes</h2>
-                </div>
-                <div id="spookyjokes" class="col-12 imptext2 px-4"></div>
-            </div>
+        <div>
+          <h2>Spooky Jokes</h2>
+          <div id="spookyjokes" class="col-12 imptext2 px-4"></div>
         </div>
+        <!--Image changer goes here!-->
+        <div>
+          <img src="/Images/characters.png" alt="Funny Characters" class="character-img">
+        </div>
+      </section>
+
+    <!-- Find the witch -->
+
+    <section class="section section--2 find-the-witch">
+      <div class="container--2">
+        <div class="container--2__text">
+          <h2>Find the witch</h2>
+          <p>Find the witch to get a reward</p>
+          <button class="button--reward hidden" onclick="getRewards()">Get Reward</button>
+        </div>
+        <div class="container--2__img">
+          <img class="witch-img" src="images/witch.png" alt="Witch image">
+          <p>It's not me you need to find</p>
+        </div>
+      </div>
     </section>
 
 <!--This is my awesome game section-->
@@ -90,14 +109,15 @@
 		<img class="leaves" src="/images/leafleft.svg" alt="leafleft">
 	</div>
 
+	<!--Added Hyperlinks to footer images (GaushJ)-->
 	<div class="footer-content">
-		<img class="hacktober" src="/images/hacktober.svg" alt="Hacktober">
+		<a href = "https://hacktoberfest.digitalocean.com/" target="_blank"><img class="hacktober" src="/images/hacktober.svg" alt="Hacktober"></a>
 		<p class="footer-text">This site was made for Hacktoberfest 2021. Thank you to Digital Ocean, Appwrite, Intel, Deepsource, DEV and Github.</p>
 		<div class="sponsors">    
-			<img class="sponsor" src="/images/digitalocean.svg" alt="DigitalOcean">
-			<img class="sponsor" src="/images/appwrite.svg" alt="Appwrite">
-			<img class="sponsor" src="/images/intel.svg" alt="Intel">
-			<img class="sponsor" src="/images/deepsource.svg" alt="Deepsource">
+			<a href="https://www.digitalocean.com/" target="_blank"><img class="sponsor" src="/images/digitalocean.svg" alt="DigitalOcean"></a>
+			<a href="https://appwrite.io/" target="_blank"><img class="sponsor" src="/images/appwrite.svg" alt="Appwrite"></a>
+			<a href="https://www.intel.com/content/www/us/en/homepage.html" target="_blank"><img class="sponsor" src="/images/intel.svg" alt="Intel"></a>
+			<a href="https://deepsource.io/" target="_blank"><img class="sponsor" src="/images/deepsource.svg" alt="Deepsource"></a>
 		</div>
 		<span class="footer-heart"></span>
 	</div>
@@ -115,6 +135,12 @@
 </div>
 
 <script src="core.js"></script>
+<script src="navbar.js"></script>
+<script type = "text/javascript">  
+  function getRewards() {  
+     alert("He-he-he you found me here's your reward 🎁");  
+  }  
+</script>  
 </body>
 
 </html>

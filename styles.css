@@ -16,6 +16,7 @@ html {
     background-size: cover; */
   background: orange;
   font-family: 'Creepster', cursive;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -26,7 +27,7 @@ html {
 html,
 body {
   height: 100%;
-  overflow-x: hidden !important;
+  overflow-x: visible !important;
   background-color: #000000;
 }
 
@@ -58,7 +59,7 @@ body {
   border: 1px solid #000;
 }
 
-.container a {
+.card a {
   text-decoration: none;
   color: white;
   display: block;
@@ -215,10 +216,6 @@ nav {
   }
 }
 
-/* Navbar */
-html {
-  scroll-behavior: smooth;
-}
 
 /* Navbar */
 body {
@@ -226,15 +223,107 @@ body {
   font-family: 'Space Mono', monospace;
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  background: rgba(22,22,22,0.85);
+  z-index: 100000;
+}
+.header__logo {
+  position: relative;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+.header__logo a {
+  font-weight: 700;
+  color: #fff;
+  font-size: 17px;
+  padding: 14px 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+#button-hamburger {
+  display: none;
+  z-index: 999;
+}
+.topnav {
+  display: grid;
+  z-index: 99;
+  width: auto;
+  position: relative;
+  transform: translate(0, 0);
+  grid-auto-flow: column;
+  top: 0;
+  text-align: center;
+}
+@media screen and (max-width: 670px) {
+  .topnav {
+    grid-auto-flow: row;
+    background-color: #222;
+    position: absolute;
+    transform: translate(-300px, 0);
+    transition: transform 0.3s ease-in-out;
+    margin: 0 auto;
+    top: 75px;
+    text-align: left;
+  }
+  .topnav a{
+    text-decoration: none;
+    display: inline-block;
+  }
+  .topnav.open {
+    transform: translate(0,0);
+    width: 100%;
+  }
+  #button-hamburger {
+    display: block;
+    background-color: #000;
+    padding: 19px 17px;
+    border: none;
+    border-radius: 3px;
+    font-size: 23px;
+    color: #fff;
+    cursor: pointer;
+  }
+  #button-hamburger:hover {
+    background-color: #333;
+  }
+}
+@media screen and (min-width: 670px) and (max-width: 1000px) {
+  #button-hamburger {
+    display: none;
+    background-color: inherit;
+  }
+  .topnav {
+    width: auto;
+    background-color: inherit;
+    position: relative;
+    transform: translate(0, 0);
+    grid-auto-flow: column;
+    top: 0;
+    text-align: left;
+  }
+}
+
 .topnav {
   overflow: hidden;
-  background-color: rgb(255, 255, 255);
 }
 
 .topnav a {
-  float: left;
   color: #ffffff;
-  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
@@ -257,7 +346,9 @@ body {
 }
 
 /* Trick or Treat */
-
+.character-img {
+  width: 500px;
+}
 section#trick-or-treat {
   background: rgb(236, 119, 10);
   display: flex;
@@ -402,11 +493,11 @@ section#trick-or-treat div .start {
 }
 
 section#trick-or-treat div .trick {
-  background-image: url(Images/trick.png);
+  background-image: url(Images/trick-updated.png);
 }
 
 section#trick-or-treat div .treat {
-  background-image: url(Images/treat.png);
+  background-image: url(Images/treat-updated.png);
 }
 
 section#trick-or-treat div .dftrick {
@@ -414,6 +505,82 @@ section#trick-or-treat div .dftrick {
 }
 
 /* End of Trick or Treat */
+
+/* Find the Witch */
+
+.container--2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(236, 119, 10);
+  padding: 20px 50px;
+  border-bottom: 10px solid #000;
+}
+
+.container--2__text h2 {
+  font-family: 'Creepster', cursive;
+  color: #000;
+  letter-spacing: 0.5rem;
+  font-size: 4rem;
+}
+
+.container--2 p, .button--reward{
+  font-family: "Crimson Text", serif;
+  font-size: 1.4rem;
+  margin-bottom: 64px;
+}
+
+.container--2 p{
+  padding-left: 48px;
+}
+
+.container--2__text{
+  justify-self: center;
+  padding-left: 64px;
+}
+
+.container--2__img p{
+    font-family: 'Creepster', cursive;
+    color: black;
+    padding-left: 30px;
+    font-size: 32px;
+}
+
+.witch-img{
+  height: 350px;
+  margin-right: 100px;
+}
+
+.the-witch{
+  height: 35px;
+}
+
+.button--reward{
+  background-color: black;
+  color: white;
+  border: 0;
+  font-size: 56px;
+  font-family: inherit;
+  padding: 16px 32px;
+  margin-left: 64px;
+  border-radius: 15px;
+}
+
+.button--reward:hover{
+  background-color: #222;
+  outline: none;
+  cursor: pointer;
+}
+
+.button--reward:focus{
+  outline: none;
+}
+
+.hidden{
+  display: none;
+}
+
+/* End of Find the Witch */
 
 /*Contact Page CSS*/
 .card {
