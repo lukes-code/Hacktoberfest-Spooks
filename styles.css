@@ -69,11 +69,11 @@ body {
   border-radius: 5px;
   transition: all 0.2s ease-in-out;
 }
-.container h2{
+.container h2 {
   color: orange;
 }
-.first-section{
-  background-image: url("./Scarecrow.jpeg");
+.first-section {
+  background-image: url('./Scarecrow.jpeg');
 }
 
 .container a:hover {
@@ -216,7 +216,6 @@ nav {
   }
 }
 
-
 /* Navbar */
 body {
   margin: 0;
@@ -239,7 +238,7 @@ body {
   align-items: center;
   -webkit-transition: 0.6s;
   transition: 0.6s;
-  background: rgba(22,22,22,0.85);
+  background: rgba(22, 22, 22, 0.85);
   z-index: 100000;
 }
 .header__logo {
@@ -280,12 +279,12 @@ body {
     top: 75px;
     text-align: left;
   }
-  .topnav a{
+  .topnav a {
     text-decoration: none;
     display: inline-block;
   }
   .topnav.open {
-    transform: translate(0,0);
+    transform: translate(0, 0);
     width: 100%;
   }
   #button-hamburger {
@@ -338,7 +337,6 @@ body {
   background-color: rgb(236, 119, 10);
   color: rgb(255, 255, 255);
 }
-
 
 body {
   padding: 0px;
@@ -507,13 +505,19 @@ section#trick-or-treat div .dftrick {
 /* End of Trick or Treat */
 /* Card Game */
 @font-face {
-  font-family: "Creepy";
-  src: url("https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Fonts/Creepy.woff?raw=true") format("woff"), url("https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Fonts/Creepy.woff2?raw=true") format("woff2")
+  font-family: 'Creepy';
+  src: url('https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Fonts/Creepy.woff?raw=true')
+      format('woff'),
+    url('https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Fonts/Creepy.woff2?raw=true')
+      format('woff2');
 }
 
 @font-face {
-  font-family: "Lunacy";
-  src: url("https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Fonts/Lunacy.woff") format("woff"), url("https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Fonts/Lunacy.woff2") format("woff2")
+  font-family: 'Lunacy';
+  src: url('https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Fonts/Lunacy.woff')
+      format('woff'),
+    url('https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Fonts/Lunacy.woff2')
+      format('woff2');
 }
 
 * {
@@ -522,16 +526,17 @@ section#trick-or-treat div .dftrick {
 
 html {
   min-height: 100vh;
-  cursor: url("https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Cursors/Ghost.cur"), auto;
+  cursor: url('https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Cursors/Ghost.cur'),
+    auto;
 }
 
 body {
   margin: 0;
-  background: radial-gradient(#9D5900, #3D2200);
+  background: radial-gradient(#9d5900, #3d2200);
 }
 
 .page-title {
-  color: #FF6D00;
+  color: #ff6d00;
   font-family: Creepy, serif;
   font-weight: normal;
   text-align: center;
@@ -546,7 +551,7 @@ body {
 
 .game-info {
   font-family: Lunacy, serif;
-  color: #FFBB89;
+  color: #ffbb89;
   font-size: 4em;
 }
 
@@ -566,7 +571,8 @@ body {
 }
 
 .card:hover {
-  cursor: url("https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Cursors/GhostHover.cur"), auto;
+  cursor: url('https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Cursors/GhostHover.cur'),
+    auto;
 }
 
 .card-face {
@@ -589,7 +595,7 @@ body {
 }
 
 .card.visible .card-front {
-  transform: rotateY(0)
+  transform: rotateY(0);
 }
 
 .card.matched .card-value {
@@ -605,12 +611,12 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 100;
-  color: #FF6D00;
+  color: #ff6d00;
   font-family: Creepy, serif;
 }
 
 .overlay-text-small {
-  font-size: .3em;
+  font-size: 0.3em;
 }
 
 .overlay-text.visible {
@@ -625,13 +631,14 @@ body {
     font-size: 0;
   }
   to {
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(0, 0, 0, 0.8);
     font-size: 10em;
   }
 }
 
 @keyframes dance {
-  0%, 100%  {
+  0%,
+  100% {
     transform: rotate(0);
   }
   25% {
@@ -644,18 +651,18 @@ body {
 
 .card-back {
   background-color: black;
-  border-color: #FF6D00;
+  border-color: #ff6d00;
 }
 
 .card-front {
-  background-color: #FFBB89;
+  background-color: #ffbb89;
   border-color: #333;
   transform: rotateY(180deg);
 }
 
 .card-value {
   transition: transform 100ms ease-in-out;
-  transform: scale(.9);
+  transform: scale(0.9);
 }
 
 .card-front:hover .card-value {
@@ -704,7 +711,7 @@ body {
 }
 
 .card-back:hover .spider {
-  transform: translateY(0)
+  transform: translateY(0);
 }
 
 @media (max-width: 600px) {
@@ -725,7 +732,7 @@ body {
 
 /* Find the Witch */
 
-.container--2{
+.container--2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -741,38 +748,39 @@ body {
   font-size: 4rem;
 }
 
-.container--2 p, .button--reward{
-  font-family: "Crimson Text", serif;
+.container--2 p,
+.button--reward {
+  font-family: 'Crimson Text', serif;
   font-size: 1.4rem;
   margin-bottom: 64px;
 }
 
-.container--2 p{
+.container--2 p {
   padding-left: 48px;
 }
 
-.container--2__text{
+.container--2__text {
   justify-self: center;
   padding-left: 64px;
 }
 
-.container--2__img p{
-    font-family: 'Creepster', cursive;
-    color: black;
-    padding-left: 30px;
-    font-size: 32px;
+.container--2__img p {
+  font-family: 'Creepster', cursive;
+  color: black;
+  padding-left: 30px;
+  font-size: 32px;
 }
 
-.witch-img{
+.witch-img {
   height: 350px;
   margin-right: 100px;
 }
 
-.the-witch{
+.the-witch {
   height: 35px;
 }
 
-.button--reward{
+.button--reward {
   background-color: black;
   color: white;
   border: 0;
@@ -783,17 +791,17 @@ body {
   border-radius: 15px;
 }
 
-.button--reward:hover{
+.button--reward:hover {
   background-color: #222;
   outline: none;
   cursor: pointer;
 }
 
-.button--reward:focus{
+.button--reward:focus {
   outline: none;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
@@ -857,6 +865,24 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
+.carving-section {
+  height: 500px;
+  width: 100%;
+  background-color: #ec770a;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.carving-container {
+}
+
+.carving-section h1 {
+  margin-top: 10px;
+  font-family: 'Creepster', cursive;
+}
+
 footer {
   margin: auto;
   width: 100%;
@@ -865,39 +891,34 @@ footer {
   background-color: #f4f0e1;
   display: flex;
   align-items: center;
-  justify-content:space-around
+  justify-content: space-around;
 }
-.footer-garnish{
-  
+.footer-garnish {
   text-align: center;
 }
-@media only screen and (max-width: 768px){
-  .footer-garnish{
-   display:none;
+@media only screen and (max-width: 768px) {
+  .footer-garnish {
+    display: none;
   }
-  .sponsor{
+  .sponsor {
     min-width: 100%;
     max-height: 75px;
-    }
-
+  }
 }
 
-
-.leaves{
+.leaves {
   margin: auto;
 }
-.footer-content{ 
-  
+.footer-content {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 .footer-text {
   padding: 10px;
-  font-family: Poppins,sans-serif;
+  font-family: Poppins, sans-serif;
   margin: auto;
-  color: rgba(181,58,37);
-
+  color: rgba(181, 58, 37);
 }
 @media only screen and (max-width: 1000px) {
   .footer-text {
@@ -937,42 +958,42 @@ footer {
 
 .footer-heart::before,
 .footer-heart::after {
-	content: '';
-	position: absolute;
-	background: #91a88c;
-	width: 1rem;
-	height: 1rem;
-	border-radius: 100%;
+  content: '';
+  position: absolute;
+  background: #91a88c;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
 }
 .footer-heart::before {
-	top: -0.6rem;
-	left: 0;
+  top: -0.6rem;
+  left: 0;
 }
 .footer-heart::after {
-	top: 0;
-	right: -0.6rem;
+  top: 0;
+  right: -0.6rem;
 }
 
 #spookyjokes {
-	color: black;
+  color: black;
   font-size: 1.5rem;
 }
-.hacktober{
-	padding: 10px;
-	height: 100px;
+.hacktober {
+  padding: 10px;
+  height: 100px;
 }
-.sponsors{
-	padding: 20px;
+.sponsors {
+  padding: 20px;
 }
-.sponsor{
-	padding: 0px 40px;
+.sponsor {
+  padding: 0px 40px;
   color: black;
   font-size: 2rem;
 }
-.leaves{
-  height:80px;
+.leaves {
+  height: 80px;
 }
-#secret-modal{
+#secret-modal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -982,8 +1003,8 @@ footer {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 #secret-content {
   background-color: rgb(236, 119, 10);
@@ -1030,7 +1051,7 @@ footer {
   width: 100%;
   margin: 30px;
 }
-.spooky-thanks-item a{
+.spooky-thanks-item a {
   text-decoration: none;
   color: white;
   padding: 10px 20px;
@@ -1042,9 +1063,9 @@ footer {
   background-color: #000;
   color: orange;
 }
-#spooky-birb-restart-img{
+#spooky-birb-restart-img {
   position: absolute;
-  top:235px;
+  top: 235px;
 }
 .spooky-controls {
   width: 100%;
