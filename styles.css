@@ -1,10 +1,10 @@
 /* CSS Here pls */
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap");
 
 /*Contact Page CSS*/
 html {
@@ -15,7 +15,7 @@ html {
     -o-background-size: cover;
     background-size: cover; */
   background: orange;
-  font-family: 'Creepster', cursive;
+  font-family: "Creepster", cursive;
   scroll-behavior: smooth;
 }
 
@@ -73,7 +73,7 @@ body {
   color: orange;
 }
 .first-section {
-  background-image: url('./Scarecrow.jpeg');
+  background-image: url("./Scarecrow.jpeg");
 }
 
 .container a:hover {
@@ -126,7 +126,7 @@ body {
 }
 
 .imp h2 {
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   font-style: normal;
   font-weight: bold;
   letter-spacing: -0.035em;
@@ -135,7 +135,7 @@ body {
 }
 
 .imp p {
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   font-style: normal;
   font-weight: normal;
   letter-spacing: -0.035em;
@@ -144,7 +144,7 @@ body {
 }
 
 .imp a {
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   font-style: normal;
   font-weight: normal;
   letter-spacing: -0.035em;
@@ -153,7 +153,7 @@ body {
   color: #333333;
 }
 .imp h2 {
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   font-style: normal;
   font-weight: bold;
   letter-spacing: -0.035em;
@@ -164,7 +164,7 @@ body {
 }
 
 .imp p {
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   font-style: normal;
   font-weight: normal;
   letter-spacing: -0.035em;
@@ -175,7 +175,7 @@ body {
 }
 
 .imp a {
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   font-style: normal;
   font-weight: normal;
   letter-spacing: -0.035em;
@@ -190,7 +190,7 @@ nav {
   left: 1rem;
   top: 1.25rem;
 
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   font-style: normal;
   font-weight: bold;
   font-size: 1.5rem;
@@ -224,7 +224,7 @@ nav {
 /* Navbar */
 body {
   margin: 0;
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
 }
 
 .header {
@@ -305,8 +305,6 @@ body {
   #button-hamburger:hover {
     background-color: #333;
   }
-  
-  
 }
 @media screen and (min-width: 670px) and (max-width: 1000px) {
   #button-hamburger {
@@ -362,7 +360,7 @@ section#trick-or-treat {
   justify-content: center;
   align-items: center;
   padding: 20px 50px;
-  font-family: 'Crimson Text', serif;
+  font-family: "Crimson Text", serif;
   font-size: 1.4rem;
 }
 
@@ -372,7 +370,7 @@ section#trick-or-treat div {
 }
 
 section#trick-or-treat div h2 {
-  font-family: 'Creepster', cursive;
+  font-family: "Creepster", cursive;
   letter-spacing: 0.5rem;
   font-size: 4rem;
   color: black;
@@ -512,19 +510,19 @@ section#trick-or-treat div .dftrick {
 /* End of Trick or Treat */
 /* Card Game */
 @font-face {
-  font-family: 'Creepy';
-  src: url('https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Fonts/Creepy.woff?raw=true')
-      format('woff'),
-    url('https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Fonts/Creepy.woff2?raw=true')
-      format('woff2');
+  font-family: "Creepy";
+  src: url("https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Fonts/Creepy.woff?raw=true")
+      format("woff"),
+    url("https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Fonts/Creepy.woff2?raw=true")
+      format("woff2");
 }
 
 @font-face {
-  font-family: 'Lunacy';
-  src: url('https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Fonts/Lunacy.woff')
-      format('woff'),
-    url('https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Fonts/Lunacy.woff2')
-      format('woff2');
+  font-family: "Lunacy";
+  src: url("https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Fonts/Lunacy.woff")
+      format("woff"),
+    url("https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Fonts/Lunacy.woff2")
+      format("woff2");
 }
 
 * {
@@ -533,7 +531,7 @@ section#trick-or-treat div .dftrick {
 
 html {
   min-height: 100vh;
-  cursor: url('https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Cursors/Ghost.cur'),
+  cursor: url("https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Cursors/Ghost.cur"),
     auto;
 }
 
@@ -578,7 +576,7 @@ body {
 }
 
 .card:hover {
-  cursor: url('https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Cursors/GhostHover.cur'),
+  cursor: url("https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Cursors/GhostHover.cur"),
     auto;
 }
 
@@ -733,7 +731,7 @@ body {
 }
 /* Background Styles Only */
 
-@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url("https://fonts.googleapis.com/css?family=Raleway");
 
 /* Card Game End */
 
@@ -748,9 +746,8 @@ body {
   border-bottom: 10px solid #000;
 }
 
-
 .container--2__text h2 {
-  font-family: 'Creepster', cursive;
+  font-family: "Creepster", cursive;
   color: #000;
   letter-spacing: 0.5rem;
   font-size: 4rem;
@@ -758,7 +755,7 @@ body {
 
 .container--2 p,
 .button--reward {
-  font-family: 'Crimson Text', serif;
+  font-family: "Crimson Text", serif;
   font-size: 1.4rem;
   margin-bottom: 64px;
 }
@@ -773,54 +770,43 @@ body {
 }
 
 .container--2__img p {
-  font-family: 'Creepster', cursive;
+  font-family: "Creepster", cursive;
   color: black;
   padding-left: 30px;
   font-size: 32px;
 }
 @media (max-width: 992px) {
-  
-  .container--2__text
-  {
+  .container--2__text {
     padding: 10px;
   }
-  .container--2__text p
-  {
-    padding-left:10px ;
+  .container--2__text p {
+    padding-left: 10px;
   }
-  .container--2__img
-  {
+  .container--2__img {
     justify-self: flex-end;
   }
 }
 @media (max-width: 768px) {
-  .container--2
-  {
+  .container--2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .container--2__text
-  {
+  .container--2__text {
     padding: 0;
   }
-  .container--2__img
-  {
+  .container--2__img {
     align-self: center;
-    
   }
 }
 @media (max-width: 600px) {
-  .container--2__text p 
-  {
+  .container--2__text p {
     padding-left: 0;
   }
-  .container--2__text
-  {
+  .container--2__text {
     text-align: center;
   }
-  .container--2__img
-  {
+  .container--2__img {
     padding-left: 15%;
     align-self: center;
   }
@@ -863,11 +849,10 @@ body {
 
 /* Start of the Spooky bird Page Navbar Styling */
 /* Same classes are reused for Navbar-styling of Spooky-bird game page as used in home page */
-.Body{
+.Body {
   position: absolute;
 }
 /* End of the Spooky bird Page Navbar Styling */
-
 
 /*Contact Page CSS*/
 .card {
@@ -964,7 +949,23 @@ body {
 
 .carving-section h1 {
   margin-top: 10px;
-  font-family: 'Creepster', cursive;
+  font-family: "Creepster", cursive;
+}
+
+@media only screen and (max-width: 768px) {
+  .carving-section {
+    height: auto;
+    padding: 15px 5px;
+  }
+  .carving-section h1 {
+    text-align: center;
+  }
+  .carving-container {
+    flex-direction: column;
+  }
+  .pumpkin-card {
+    margin: auto;
+  }
 }
 
 footer {
@@ -1042,7 +1043,7 @@ footer {
 
 .footer-heart::before,
 .footer-heart::after {
-  content: '';
+  content: "";
   position: absolute;
   background: #91a88c;
   width: 1rem;
