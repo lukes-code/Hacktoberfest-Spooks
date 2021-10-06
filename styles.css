@@ -9,11 +9,7 @@
 /*Contact Page CSS*/
 html {
   /* If Want a image change here */
-  /* background: url(/4138964.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; */
+ 
   background: orange;
   font-family: "Creepster", cursive;
   scroll-behavior: smooth;
