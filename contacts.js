@@ -1,4 +1,4 @@
-let contacts = document.querySelector(".contacts");
+const contacts = document.querySelector(".contacts");
 let contributors = "";
 
 fetch(
