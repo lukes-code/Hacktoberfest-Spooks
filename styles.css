@@ -1,21 +1,18 @@
 /* CSS Here pls */
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap");
 
 /*Contact Page CSS*/
 html {
   /* If Want a image change here */
-  /* background: url(/4138964.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; */
+ 
   background: orange;
-  font-family: 'Creepster', cursive;
+  font-family: "Creepster", cursive;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -26,31 +23,26 @@ html {
 html,
 body {
   height: 100%;
-  overflow-x: hidden !important;
+  overflow-x: visible !important;
   background-color: #000000;
 }
 
-.card {
-  /* Add shadows to create the "card" effect */
-  margin: 20px;
-  box-shadow: 0 4px 8px 0 rgb(5, 5, 5);
-  transition: 0.3s;
-  width: 300px;
-  border: black 2px solid;
-  border-radius: 10px;
+.cards {
+  
   display: flex;
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  color: black;
+
 }
 
 /* On mouse-over, add a deeper shadow */
-.card:hover {
+.cards:hover {
   transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
 }
 
-.card img {
+.cards img {
   width: 200px;
   height: 200px;
   margin: 20px auto 10px auto;
@@ -58,20 +50,18 @@ body {
   border: 1px solid #000;
 }
 
-.container a {
+.cards a {
   text-decoration: none;
   color: white;
   display: block;
   margin-bottom: 10px;
   padding: 10px 20px;
-  border: 1px solid #000;
-  border-radius: 5px;
   transition: all 0.2s ease-in-out;
 }
-.container h2{
+.container h2 {
   color: orange;
 }
-.first-section{
+.first-section {
   background-image: url("./Scarecrow.jpeg");
 }
 
@@ -82,7 +72,7 @@ body {
 
 /* Add some padding inside the card container */
 .container {
-  padding: 2px 16px;
+  padding: 2px 8px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -93,9 +83,11 @@ body {
   justify-content: space-evenly;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-bottom:100px;
 }
 .intro {
   margin-top: 100px;
+  margin-bottom:100px;
   color: white;
   display: flex;
   justify-content: center;
@@ -124,8 +116,8 @@ body {
   overflow-x: hidden !important;
 }
 
-.imptext h2 {
-  font-family: 'Space Mono', monospace;
+.imp h2 {
+  font-family: "Space Mono", monospace;
   font-style: normal;
   font-weight: bold;
   letter-spacing: -0.035em;
@@ -133,8 +125,8 @@ body {
   color: #ffffff;
 }
 
-.imptext p {
-  font-family: 'Space Mono', monospace;
+.imp p {
+  font-family: "Space Mono", monospace;
   font-style: normal;
   font-weight: normal;
   letter-spacing: -0.035em;
@@ -142,8 +134,8 @@ body {
   color: #ffffff;
 }
 
-.imptext a {
-  font-family: 'Space Mono', monospace;
+.imp a {
+  font-family: "Space Mono", monospace;
   font-style: normal;
   font-weight: normal;
   letter-spacing: -0.035em;
@@ -151,32 +143,37 @@ body {
   /* Gray 1 */
   color: #333333;
 }
-.imptext2 h2 {
-  font-family: 'Space Mono', monospace;
+.imp h2 {
+  font-family: "Space Mono", monospace;
   font-style: normal;
   font-weight: bold;
   letter-spacing: -0.035em;
   /* Gray 1 */
   color: #ffffff;
+  padding-left: 180px;
+  font-size: 50px;
 }
 
-.imptext2 p {
-  font-family: 'Space Mono', monospace;
+.imp p {
+  font-family: "Space Mono", monospace;
   font-style: normal;
   font-weight: normal;
   letter-spacing: -0.035em;
   /* Gray 1 */
   color: #ffffff;
+  padding-left: 175px;
+  font-size: 25px;
 }
 
-.imptext2 a {
-  font-family: 'Space Mono', monospace;
+.imp a {
+  font-family: "Space Mono", monospace;
   font-style: normal;
   font-weight: normal;
   letter-spacing: -0.035em;
   text-transform: uppercase;
   /* Gray 1 */
   color: #333333;
+  padding-left: 200px;
 }
 nav {
   width: auto;
@@ -184,7 +181,7 @@ nav {
   left: 1rem;
   top: 1.25rem;
 
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   font-style: normal;
   font-weight: bold;
   font-size: 1.5rem;
@@ -216,14 +213,9 @@ nav {
 }
 
 /* Navbar */
-html {
-  scroll-behavior: smooth;
-}
-
-/* Navbar */
 body {
   margin: 0;
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
 }
 
 .header {
@@ -242,7 +234,7 @@ body {
   align-items: center;
   -webkit-transition: 0.6s;
   transition: 0.6s;
-  background: rgba(22,22,22,0.85);
+  background: rgba(22, 22, 22, 0.85);
   z-index: 100000;
 }
 .header__logo {
@@ -283,12 +275,12 @@ body {
     top: 75px;
     text-align: left;
   }
-  .topnav a{
+  .topnav a {
     text-decoration: none;
     display: inline-block;
   }
   .topnav.open {
-    transform: translate(0,0);
+    transform: translate(0, 0);
     width: 100%;
   }
   #button-hamburger {
@@ -342,14 +334,15 @@ body {
   color: rgb(255, 255, 255);
 }
 
-
 body {
   padding: 0px;
   margin: 0px;
 }
 
 /* Trick or Treat */
-
+.character-img {
+  width: 500px;
+}
 section#trick-or-treat {
   background: rgb(236, 119, 10);
   display: flex;
@@ -358,7 +351,7 @@ section#trick-or-treat {
   justify-content: center;
   align-items: center;
   padding: 20px 50px;
-  font-family: 'Crimson Text', serif;
+  font-family: "Crimson Text", serif;
   font-size: 1.4rem;
 }
 
@@ -368,7 +361,7 @@ section#trick-or-treat div {
 }
 
 section#trick-or-treat div h2 {
-  font-family: 'Creepster', cursive;
+  font-family: "Creepster", cursive;
   letter-spacing: 0.5rem;
   font-size: 4rem;
   color: black;
@@ -506,6 +499,351 @@ section#trick-or-treat div .dftrick {
 }
 
 /* End of Trick or Treat */
+/* Card Game */
+@font-face {
+  font-family: "Creepy";
+  src: url("https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Fonts/Creepy.woff?raw=true")
+      format("woff"),
+    url("https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Fonts/Creepy.woff2?raw=true")
+      format("woff2");
+}
+
+@font-face {
+  font-family: "Lunacy";
+  src: url("https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Fonts/Lunacy.woff")
+      format("woff"),
+    url("https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Fonts/Lunacy.woff2")
+      format("woff2");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100vh;
+  cursor: url("https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Cursors/Ghost.cur"),
+    auto;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(#9d5900, #3d2200);
+}
+
+.page-title {
+  color: #ff6d00;
+  font-family: Creepy, serif;
+  font-weight: normal;
+  text-align: center;
+  font-size: 6em;
+}
+
+.game-info-container {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.game-info {
+  font-family: Lunacy, serif;
+  color: #ffbb89;
+  font-size: 4em;
+}
+
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  margin: 50px;
+  justify-content: center;
+  perspective: 500px;
+}
+
+.card {
+  position: relative;
+  height: 175px;
+  width: 125px;
+}
+
+.card:hover {
+  cursor: url("https://raw.githubusercontent.com/WebDevSimplified/Mix-Or-Match/master/Assets/Cursors/GhostHover.cur"),
+    auto;
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  border-width: 1px;
+  border-style: solid;
+  transition: transform 500ms ease-in-out;
+}
+
+.card.visible .card-back {
+  transform: rotateY(-180deg);
+}
+
+.card.visible .card-front {
+  transform: rotateY(0);
+}
+
+.card.matched .card-value {
+  animation: dance 1s linear infinite 500ms;
+}
+
+.overlay-text {
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  color: #ff6d00;
+  font-family: Creepy, serif;
+}
+
+.overlay-text-small {
+  font-size: 0.3em;
+}
+
+.overlay-text.visible {
+  display: flex;
+  flex-direction: column;
+  animation: overlay-grow 500ms forwards;
+}
+
+@keyframes overlay-grow {
+  from {
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 0;
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 10em;
+  }
+}
+
+@keyframes dance {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-30deg);
+  }
+  75% {
+    transform: rotate(30deg);
+  }
+}
+
+.card-back {
+  background-color: black;
+  border-color: #ff6d00;
+}
+
+.card-front {
+  background-color: #ffbb89;
+  border-color: #333;
+  transform: rotateY(180deg);
+}
+
+.card-value {
+  transition: transform 100ms ease-in-out;
+  transform: scale(0.9);
+}
+
+.card-front:hover .card-value {
+  transform: scale(1);
+}
+
+.cob-web {
+  position: absolute;
+  width: 47px;
+  height: 47px;
+  transition: width 100ms ease-in-out, height 100ms ease-in-out;
+}
+
+.card-face:hover .cob-web {
+  width: 52px;
+  height: 52px;
+}
+
+.cob-web-top-left {
+  transform: rotate(270deg);
+  top: 0;
+  left: 0;
+}
+
+.cob-web-top-right {
+  top: 0;
+  right: 0;
+}
+
+.cob-web-bottom-left {
+  transform: rotate(180deg);
+  bottom: 0;
+  left: 0;
+}
+
+.cob-web-bottom-right {
+  transform: rotate(90deg);
+  bottom: 0;
+  right: 0;
+}
+
+.spider {
+  align-self: flex-start;
+  transform: translateY(-10px);
+  transition: transform 100ms ease-in-out;
+}
+
+.card-back:hover .spider {
+  transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+  .game-container {
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .game-info-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* Background Styles Only */
+
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+/* Card Game End */
+
+/* Find the Witch */
+
+.container--2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(236, 119, 10);
+  padding: 20px 50px;
+  border-bottom: 10px solid #000;
+}
+
+.container--2__text h2 {
+  font-family: "Creepster", cursive;
+  color: #000;
+  letter-spacing: 0.5rem;
+  font-size: 4rem;
+}
+
+.container--2 p,
+.button--reward {
+  font-family: "Crimson Text", serif;
+  font-size: 1.4rem;
+  margin-bottom: 64px;
+}
+
+.container--2 p {
+  padding-left: 48px;
+}
+
+.container--2__text {
+  justify-self: center;
+  padding-left: 64px;
+}
+
+.container--2__img p {
+  font-family: "Creepster", cursive;
+  color: black;
+  padding-left: 30px;
+  font-size: 32px;
+}
+@media (max-width: 992px) {
+  .container--2__text {
+    padding: 10px;
+  }
+  .container--2__text p {
+    padding-left: 10px;
+  }
+  .container--2__img {
+    justify-self: flex-end;
+  }
+}
+@media (max-width: 768px) {
+  .container--2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .container--2__text {
+    padding: 0;
+  }
+  .container--2__img {
+    align-self: center;
+  }
+}
+@media (max-width: 600px) {
+  .container--2__text p {
+    padding-left: 0;
+  }
+  .container--2__text {
+    text-align: center;
+  }
+  .container--2__img {
+    padding-left: 15%;
+    align-self: center;
+  }
+}
+.witch-img {
+  height: 350px;
+  margin-right: 100px;
+}
+
+.the-witch {
+  height: 35px;
+}
+
+.button--reward {
+  background-color: black;
+  color: white;
+  border: 0;
+  font-size: 56px;
+  font-family: inherit;
+  padding: 16px 32px;
+  margin-left: 64px;
+  border-radius: 15px;
+}
+
+.button--reward:hover {
+  background-color: #222;
+  outline: none;
+  cursor: pointer;
+}
+
+.button--reward:focus {
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
+/* End of Find the Witch */
+
+/* Start of the Spooky bird Page Navbar Styling */
+/* Same classes are reused for Navbar-styling of Spooky-bird game page as used in home page */
+.Body {
+  position: absolute;
+}
+/* End of the Spooky bird Page Navbar Styling */
 
 /*Contact Page CSS*/
 .card {
@@ -565,6 +903,62 @@ section#trick-or-treat div .dftrick {
   flex-direction: column;
   align-items: center;
 }
+
+.carving-section {
+  height: 500px;
+  width: 100%;
+  background-color: #ec770a;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.carving-container {
+  display: flex;
+  width: 70%;
+  justify-content: space-evenly;
+}
+
+.pumpkin-card {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  margin: 15px;
+  flex-direction: column;
+}
+
+.pumpkin-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.pumpkin-card h4 {
+  margin-top: 15px;
+}
+
+.carving-section h1 {
+  margin-top: 10px;
+  font-family: "Creepster", cursive;
+}
+
+@media only screen and (max-width: 768px) {
+  .carving-section {
+    height: auto;
+    padding: 15px 5px;
+  }
+  .carving-section h1 {
+    text-align: center;
+  }
+  .carving-container {
+    flex-direction: column;
+  }
+  .pumpkin-card {
+    margin: auto;
+  }
+}
+
 footer {
   margin: auto;
   width: 100%;
@@ -573,39 +967,34 @@ footer {
   background-color: #f4f0e1;
   display: flex;
   align-items: center;
-  justify-content:space-around
+  justify-content: space-around;
 }
-.footer-garnish{
-  
+.footer-garnish {
   text-align: center;
 }
-@media only screen and (max-width: 768px){
-  .footer-garnish{
-   display:none;
+@media only screen and (max-width: 768px) {
+  .footer-garnish {
+    display: none;
   }
-  .sponsor{
+  .sponsor {
     min-width: 100%;
     max-height: 75px;
-    }
-
+  }
 }
 
-
-.leaves{
+.leaves {
   margin: auto;
 }
-.footer-content{ 
-  
+.footer-content {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 .footer-text {
   padding: 10px;
-  font-family: Poppins,sans-serif;
+  font-family: Poppins, sans-serif;
   margin: auto;
-  color: rgba(181,58,37);
-
+  color: rgba(181, 58, 37);
 }
 @media only screen and (max-width: 1000px) {
   .footer-text {
@@ -645,42 +1034,42 @@ footer {
 
 .footer-heart::before,
 .footer-heart::after {
-	content: '';
-	position: absolute;
-	background: #91a88c;
-	width: 1rem;
-	height: 1rem;
-	border-radius: 100%;
+  content: "";
+  position: absolute;
+  background: #91a88c;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100%;
 }
 .footer-heart::before {
-	top: -0.6rem;
-	left: 0;
+  top: -0.6rem;
+  left: 0;
 }
 .footer-heart::after {
-	top: 0;
-	right: -0.6rem;
+  top: 0;
+  right: -0.6rem;
 }
 
 #spookyjokes {
-	color: black;
+  color: black;
   font-size: 1.5rem;
 }
-.hacktober{
-	padding: 10px;
-	height: 100px;
+.hacktober {
+  padding: 10px;
+  height: 100px;
 }
-.sponsors{
-	padding: 20px;
+.sponsors {
+  padding: 20px;
 }
-.sponsor{
-	padding: 0px 40px;
+.sponsor {
+  padding: 0px 40px;
   color: black;
   font-size: 2rem;
 }
-.leaves{
-  height:80px;
+.leaves {
+  height: 80px;
 }
-#secret-modal{
+#secret-modal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -690,8 +1079,8 @@ footer {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 #secret-content {
   background-color: rgb(236, 119, 10);
@@ -720,4 +1109,46 @@ footer {
 
 .soc {
   background-color: rgb(236, 119, 10);
+}
+
+#spooky-birb {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.spooky-thanks {
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  background-color: rgb(236, 119, 10);
+}
+.spooky-thanks-item {
+  width: 100%;
+  margin: 30px;
+}
+.spooky-thanks-item a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+.spooky-thanks-item a:hover {
+  background-color: #000;
+  color: orange;
+}
+#spooky-birb-restart-img {
+  position: absolute;
+  top: 235px;
+}
+.spooky-controls {
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+.spooky-controls-item {
+  width: 100%;
+  margin: 10px;
 }

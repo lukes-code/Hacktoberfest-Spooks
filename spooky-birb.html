@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Images/favicon-16x16.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spooky Birb</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body style="height: 100%;min-height: 100%;" class="Body">
+    <div class="header">
+        <button tabindex="0" id="button-hamburger" aria-label="navigation-menu">☰</button>
+        <navbar class="topnav">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a class="active" href="#Spooky">Play Spooky Birb</a>
+            <a href="https://www.youtube.com/watch?v=n_qbGJuxCYY">Click Me!</a>
+        </navbar>
+         <navbar class="header__logo">
+            <a href="./index.html">Spooky</a>
+        </navbar>
+    </div>
+    <div class="intro">
+        <h1>Play Spooky Birb</h1>
+    </div>
+    <div id="spooky-birb">
+        <img src="Images/spooky-birb-start.png" id="spooky-birb-load-img">
+        <img src="Images/pixel-restart.png" id="spooky-birb-restart-img" style="display: none;">
+    </div>
+    <div class="spooky-controls">
+        <h2 class="spooky-controls-item">Controls</h2>
+        <h4 class="spooky-controls-item">Click to start/restart</h4>
+        <h4 class="spooky-controls-item">Arrow keys / WASD to move birb</h4>
+    </div>
+    <div class="spooky-thanks">
+        <div class="spooky-thanks-item"><h2>Thanks to the below creators for the assets!</h2></div>
+        <div class="spooky-thanks-item"><a href="https://freesound.org/s/337653/" target="_blank">Background music: hmmm101</a></div>
+        <div class="spooky-thanks-item"><a href="https://freesound.org/s/445958/" target="_blank">Birb squeak: Breviceps</a></div>
+        <div class="spooky-thanks-item"><a href="https://www.pixilart.com/art/pastel-graveyard-5974f85db3d6648" target="_blank">Background: skele-pixel</a></div>
+    </div>
+
+    <footer id="footer">
+  
+        <div class="footer-garnish">
+          <img class="leaves" src="./images/leafleft.svg" alt="leafleft">
+      </div>
+  
+      <!--Added Hyperlinks to footer images (GaushJ)-->
+      <div class="footer-content">
+          <a href = "https://hacktoberfest.digitalocean.com/" target="_blank"><img class="hacktober" src="./images/hacktober.svg" alt="Hacktober"></a>
+          <p class="footer-text">This site was made for Hacktoberfest 2021. Thank you to Digital Ocean, Appwrite, Intel, Deepsource, DEV and Github.</p>
+          <div class="sponsors">    
+              <a href="https://www.digitalocean.com/" target="_blank"><img class="sponsor" src="./images/digitalocean.svg" alt="DigitalOcean"></a>
+              <a href="https://appwrite.io/" target="_blank"><img class="sponsor" src="./images/appwrite.svg" alt="Appwrite"></a>
+              <a href="https://www.intel.com/content/www/us/en/homepage.html" target="_blank"><img class="sponsor" src="./images/intel.svg" alt="Intel"></a>
+              <a href="https://deepsource.io/" target="_blank"><img class="sponsor" src="./images/deepsource.svg" alt="Deepsource"></a>
+          </div>
+          <span class="footer-heart"></span>
+      </div>
+  
+      <div class="footer-garnish">
+          <img class="leaves" src="./images/leafright.svg" alt="leafright">
+      </div>
+    
+  </footer>
+    <!-- Reusing the already written script for Navbar for small size -->
+    <script src="navbar.js"></script>
+    <script src="spooky-birb.js"></script>
+</body>
+
+</html>
