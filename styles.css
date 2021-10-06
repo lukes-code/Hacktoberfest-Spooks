@@ -50,6 +50,7 @@ body {
   border: 1px solid #000;
 }
 
+
 .cards a {
   text-decoration: none;
   color: white;
@@ -1151,4 +1152,22 @@ footer {
 .spooky-controls-item {
   width: 100%;
   margin: 10px;
+}
+
+/* Float header button right on desktop */
+.first-section .btn.btn-dark {
+  float: right;
+}
+
+/* Responsive styles for header on smaller devices */
+@media screen and (max-width: 670px) {
+  .first-section .col.imp h2 {
+    padding-left: 0;
+  }
+  .first-section .btn.btn-dark {
+    float: none;
+  }
+  .first-section .header-text {
+    padding-left: 0;
+  }
 }
