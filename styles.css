@@ -31,27 +31,22 @@ body {
   background-color: #000000;
 }
 
-.card {
-  /* Add shadows to create the "card" effect */
-  margin: 20px;
-  box-shadow: 0 4px 8px 0 rgb(5, 5, 5);
-  transition: 0.3s;
-  width: 300px;
-  border: black 2px solid;
-  border-radius: 10px;
+.cards {
+  
   display: flex;
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  color: black;
+
 }
 
 /* On mouse-over, add a deeper shadow */
-.card:hover {
+.cards:hover {
   transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
 }
 
-.card img {
+.cards img {
   width: 200px;
   height: 200px;
   margin: 20px auto 10px auto;
@@ -59,14 +54,13 @@ body {
   border: 1px solid #000;
 }
 
-.card a {
+
+.cards a {
   text-decoration: none;
   color: white;
   display: block;
   margin-bottom: 10px;
   padding: 10px 20px;
-  border: 1px solid #000;
-  border-radius: 5px;
   transition: all 0.2s ease-in-out;
 }
 .container h2 {
@@ -94,9 +88,11 @@ body {
   justify-content: space-evenly;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-bottom:100px;
 }
 .intro {
   margin-top: 100px;
+  margin-bottom:100px;
   color: white;
   display: flex;
   justify-content: center;
