@@ -1123,6 +1123,7 @@ footer {
   height: 400px;
   text-align: center;
   background-color: rgb(236, 119, 10);
+  padding-top:50px;
 }
 .spooky-thanks-item {
   width: 100%;
@@ -1148,6 +1149,8 @@ footer {
   width: 100%;
   text-align: center;
   color: white;
+  min-height: 175px;
+  margin-top: 110px;
 }
 .spooky-controls-item {
   width: 100%;
